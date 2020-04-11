@@ -13,5 +13,77 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="ScriptHookV">
+      <UniqueIdentifier>{ccd612b2-42a4-416e-af49-538379db5074}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{7ebe1cc4-2679-4933-a0f6-095d02b213f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DashHook">
+      <UniqueIdentifier>{431abb91-b97e-44c6-b99b-763c9efed039}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{c87a0e80-8160-4a5b-b856-12482f4a16d4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DllMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\Logger.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Script.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\VehicleExtensions.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\thirdparty\ScriptHookV_SDK\inc\nativeCaller.h">
+      <Filter>ScriptHookV</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\ScriptHookV_SDK\inc\natives.h">
+      <Filter>ScriptHookV</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\ScriptHookV_SDK\inc\types.h">
+      <Filter>ScriptHookV</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\ScriptHookV_SDK\inc\enums.h">
+      <Filter>ScriptHookV</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\ScriptHookV_SDK\inc\main.h">
+      <Filter>ScriptHookV</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\Logger.hpp">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Script.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\DashHook\DashHook.h">
+      <Filter>DashHook</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory\VehicleExtensions.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\Math.hpp">
+      <Filter>Util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\thirdparty\ScriptHookV_SDK\lib\ScriptHookV.lib">
+      <Filter>ScriptHookV</Filter>
+    </Library>
+    <Library Include="..\thirdparty\DashHook\DashHook.lib">
+      <Filter>DashHook</Filter>
+    </Library>
   </ItemGroup>
 </Project>
