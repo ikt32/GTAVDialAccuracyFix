@@ -5,6 +5,7 @@
 
 #include "Util/Logger.hpp"
 #include "Util/Math.hpp"
+#include "Util/UI.hpp"
 
 #include <DashHook/DashHook.h>
 #include <ScriptHookV_SDK/inc/natives.h>
@@ -39,6 +40,7 @@ private:
     void updateCheatMonitor() {
         if (GAMEPLAY::_HAS_CHEAT_STRING_JUST_BEEN_ENTERED(
             GAMEPLAY::GET_HASH_KEY(mSettings.Main.Cheat.c_str()))) {
+            UI::Notify("Reloaded settings!");
             mSettings.Load();
         }
     }
@@ -98,7 +100,7 @@ void ScriptMain() {
     logger.SetMinLevel(DEBUG);
     VehicleExtensions::Init();
 
-    SpeedoFixScript script("SpeedoFix/settings.ini");
+    SpeedoFixScript script("DialAccuracyFix/settings.ini");
     
     while (true) {
         script.Tick();

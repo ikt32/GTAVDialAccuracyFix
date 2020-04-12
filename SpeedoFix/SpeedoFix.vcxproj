@@ -15,7 +15,7 @@
     <ProjectGuid>{B84F13C5-AB0C-4B3A-9A3E-5E8DFC5D7B79}</ProjectGuid>
     <RootNamespace>SpeedoFix</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>DashboardSpeedoFix</ProjectName>
+    <ProjectName>DialAccuracyFix</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -90,6 +90,7 @@
     <ClCompile Include="Script.cpp" />
     <ClCompile Include="Settings.cpp" />
     <ClCompile Include="Util\Logger.cpp" />
+    <ClCompile Include="Util\UI.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\thirdparty\DashHook\DashHook.h" />
@@ -98,11 +99,13 @@
     <ClInclude Include="..\thirdparty\ScriptHookV_SDK\inc\nativeCaller.h" />
     <ClInclude Include="..\thirdparty\ScriptHookV_SDK\inc\natives.h" />
     <ClInclude Include="..\thirdparty\ScriptHookV_SDK\inc\types.h" />
+    <ClInclude Include="Constants.hpp" />
     <ClInclude Include="Memory\VehicleExtensions.h" />
     <ClInclude Include="Script.h" />
     <ClInclude Include="Settings.h" />
     <ClInclude Include="Util\Logger.hpp" />
     <ClInclude Include="Util\Math.hpp" />
+    <ClInclude Include="Util\UI.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="..\thirdparty\DashHook\DashHook.lib" />
