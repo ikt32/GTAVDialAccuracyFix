@@ -20,7 +20,7 @@ public:
 
     // [MAIN]
     struct {
-        std::string Cheat = "reloadspeedo";
+        std::string Cheat = "reloaddaf";
     } Main;
 
     // [CONFIGS]
